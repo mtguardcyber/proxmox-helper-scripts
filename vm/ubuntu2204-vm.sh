@@ -92,7 +92,7 @@ function check_root() {
 }
 
 function pve_check() {
-  if ! pveversion | grep -Eq "pve-manager/8.[1-3]"; then
+  if ! pveversion | grep -Eq "pve-manager/8.[1-9]"; then
     msg_error "This version of Proxmox Virtual Environment is not supported"
     echo -e "Requires Proxmox Virtual Environment Version 8.1 or later."
     echo -e "Exiting..."
@@ -411,7 +411,7 @@ qm set $VMID \
   -ide2 ${STORAGE}:cloudinit \
   -boot order=scsi0 \
   -serial0 socket \
-  -description "<div align='center'><a href='https://Helper-Scripts.com'><img src='https://raw.githubusercontent.com/tteck/Proxmox/main/misc/images/logo-81x112.png'/></a>
+  -description "<div align='center'><a href='https://Helper-Scripts.com'><img src='https://raw.githubusercontent.com/mtguardcyber/proxmox-helper-scripts/refs/heads/main/misc/images/logo-81x112.png'/></a>
 
   # Ubuntu 22.04 VM
 

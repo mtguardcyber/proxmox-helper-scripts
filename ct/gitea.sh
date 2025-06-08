@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-source <(curl -s https://raw.githubusercontent.com/tteck/Proxmox/main/misc/build.func)
+source <(curl -s https://raw.githubusercontent.com/mtguardcyber/proxmox-helper-scripts/refs/heads/main/misc/build.func)
 # Copyright (c) 2021-2024 tteck
 # Author: tteck (tteckster)
 # Co-author: Rogue-King
@@ -22,7 +22,7 @@ echo -e "Loading..."
 APP="Gitea"
 var_disk="8"
 var_cpu="1"
-var_ram="1024"
+var_ram="2048"
 var_os="debian"
 var_version="12"
 variables
